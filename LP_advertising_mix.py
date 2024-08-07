@@ -15,8 +15,8 @@ import numpy as np
 prob = LpProblem("ABC co. Advertising Mix Problem", LpMinimize)
 
 # The 2 variables Google ads and Instagram adv. units are created with a lower limit of zero
-x1 = LpVariable("Google_Ads", 0, None, LpInteger)
-x2 = LpVariable("Instagram_Ads", 0,  None)
+x1 = LpVariable("Google Ads", 0, None, LpInteger)
+x2 = LpVariable("Instagram Ads", 0,  None)
 
 # The objective function is added to 'prob' first
 prob += 1 * x1 + 2 * x2, "Total Cost of Advertising"
