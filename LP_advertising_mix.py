@@ -27,7 +27,7 @@ prob += 2 * x1 + 4 * x2 >= 18 # sales target for face sunscreen
 prob += 3 * x2 >=5 # sales target for face toner
 
 # The problem data is written to an .lp file
-prob.writeLP("ABCcoAdvMix.lp")
+prob.writeLP("./model/ABCcoAdvMix.lp")
 
 # The problem is solved using PuLP's choice of Solver
 prob.solve()
